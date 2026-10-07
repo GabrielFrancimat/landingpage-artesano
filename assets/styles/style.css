@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  text-transform: uppercase;
+  font-family: var(--font-primary);
 }
 
 .hero-content {
@@ -54,6 +56,7 @@
 
 #content-descrition {
   font-size: var(--font-size-lg);
+  background-color: rgb(255, 255, 255, 0.2);
 }
 
 #content-themes {
@@ -118,12 +121,117 @@
   padding: 0 var(--spacing-lg);
 }
 
-#menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.menu {
+  padding: 40px;
+  text-transform: uppercase;
+  font-family: var(--font-primary);
 }
 
-#menu-itens {
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: var(--spacing-xl);
+}
+
+.menu-item {
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(--color-text-gray-1);
+  font-size: var(--font-size-sm);
+}
+
+/* Classe para estilizar alguns links do nav */
+.spacing {
+  letter-spacing: var(--spacing-md);
+}
+
+#menu-logo {
+  padding: 7px 10px;
+  border: 2px solid var(--color-background-black);
+  border-radius: 1px;
+  color: var(--color-background-black);
+}
+
+#menu-logo:hover {
+  color: var(--color-text-gray-1);
+  border-color: var(--color-text-gray-1);
+  transform: scale(1.1);
+}
+
+#hero-objects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: var(--spacing-2xl);
+}
+
+.dark {
+  background-color: var(--color-background-black);
+  color: var(--color-background-gray-light);
+}
+
+.light {
+  background-color: var(--color-background-gray-light);
+  color: var(--color-background-black);
+}
+
+#hero-objects p {
+  color: var(--color-text-gray-1);
+  font-size: var(--font-size-lg);
+  text-align: center;
+  max-width: var(--size-2xl);
+  line-height: 1.5;
+}
+
+#section-title {
+  color: var(--color-text-black);
+  font-size: var(--font-size-xl);
+}
+
+#section-title::after {
+  content: "";
+  display: block;
+  width: var(--size-xl);
+  margin: 0 auto;
+  margin-top: var(--spacing-xl);
+  border-bottom: 1px solid var(--color-text-black);
+}
+
+#menu-objects {
+  display: flex;
+  gap: var(--spacing-8xl);
+}
+
+.menu-item-objects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+}
+
+.img-objects {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+}
+
+.img-objects::after {
+  content: "";
+  display: block;
+  width: var(--size-lg);
+  margin: 0 auto;
+  margin-top: var(--spacing-2xl);
+  border-bottom: 1px solid var(--color-text-black);
+}
+
+#hero-table {
+
 }

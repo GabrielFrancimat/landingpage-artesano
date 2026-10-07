@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto: Artesano</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap"
     />
+    <link rel="stylesheet" href="/assets/styles/variables.css" />
     <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="stylesheet" href="/assets/styles/global.css" />
-    <link rel="stylesheet" href="/assets/styles/variables.css" />
   </head>
   <body>
     <section id="hero">
@@ -33,16 +31,103 @@
       </div>
     </section>
 
-    <nav id="menu">
-      <ul id="menu-itens">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#estudio">Estúdio</a></li>
-        <li><a href="#colecoes">Coleções</a></li>
-        <li><a href="#sobre">A</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="menu-link spacing" href="#inicio">Início</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link spacing" href="#estudio">Estúdio</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link spacing" href="#colecoes">Coleções</a>
+        </li>
+        <li class="menu-item">
+          <a id="menu-logo" class="menu-link" href="#sobre">A</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link spacing" href="#galeria">Galeria</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link spacing" href="#depoimentos">Depoimentos</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link spacing" href="#contato">Contato</a>
+        </li>
       </ul>
     </nav>
+
+    <section id="hero-objects" class="light">
+      <h2 id="section-title" class="spacing">Fazemos objetos que duram mais que nos.</h2>
+      <p>
+        Um estidio pequeno em uma rua sem saida: barro, madeira e vidro
+        trabalhados devagar, em edicdes cura. Cada peca sai numerade, assinada &
+        com o nome de quem a fez no verso.
+      </p>
+
+      <div id="menu-objects">
+        <div class="menu-item-objects">
+          <img
+            class="img-objects"
+            src="/assets/img/icone-materia.svg"
+            alt="Ícone de caixa"
+          />
+          <span class="img-description">Matéria</span>
+        </div>
+        <div class="menu-item-objects">
+          <img
+            class="img-objects"
+            src="/assets/img/icone-desenho.svg"
+            alt="Ícone de lápis"
+          />
+          <span class="img-description">Desenho</span>
+        </div>
+        <div class="menu-item-objects">
+          <img
+            class="img-objects"
+            src="/assets/img/icone-forma.svg"
+            alt="Ícone de taça"
+          />
+          <span class="img-description">Fôrma</span>
+        </div>
+        <div class="menu-item-objects">
+          <img
+            class="img-objects"
+            src="/assets/img/icone-entrega.svg"
+            alt="Ícone de caixa"
+          />
+          <span class="img-description">Entrega</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero-table" class="dark">
+      <h2 id="section-title light">Quatro coleções, uma por estacão</h2>
+      <p>EDIÇÕES ABERTAS</p>
+      <table>
+        <tr>
+          <th>COLEÇÃO</th>
+          <th>PEÇA</th>
+          <th>EDIÇÃO</th>
+          <th>PRAZO</th>
+        </tr>
+        <tr>
+          <td>Névoa</td>
+          <td>Névoa</td>
+          <td>Sal</td>
+          <td>Sal</td>
+        </tr>
+      </table>
+      <p>
+        Abrimos as encomendas quatro vezes por ano e fechamos quando a edicéo
+        acaba. Nada é refeito depois: o molde é quebrado e a colecéo seguinte
+        comega do papel em branco.
+      </p>
+      <p>
+        Os prazos acima contam a partir da confirmag&o. O frete 6 combinado pega
+        a peca, porque nenhuma delas viaja igual.
+      </p>
+      <button class="btn-section">Pedir o Catálogo</button>
+    </section>
   </body>
 </html>

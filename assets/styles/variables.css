@@ -33,8 +33,7 @@
 
 
     /* Typography */
-    --font-primary: "Figtree", sans-serif;
-    --font-secondary: "Jost", sans-serif;
+    --font-primary: "Jost", sans-serif;
 
 
     /* Font sizes */
@@ -51,10 +50,11 @@
 
     /* Spacing */
     --spacing-md: 0.5rem;
-    --spacing-lg: 2.5rem;
-    --spacing-xl: 3.5rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2.5rem;
     --spacing-2xl: 5rem;
     --spacing-4xl: 10rem;
+    --spacing-8xl: 20rem;
 
     /* Sizing */
     --size-xs: 0.5rem;
@@ -62,4 +62,9 @@
     --size-md: 2rem;
     --size-lg: 3rem;
     --size-xl: 9rem;
+    
+    /* Sizing (div's or sections's sizes) */
+    --size-2xl: 40rem;
+    --size-4xl: 60rem;
+    --size-6xl: 80rem;
 }
