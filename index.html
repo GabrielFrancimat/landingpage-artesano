@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/assets/styles/global.css" />
   </head>
   <body>
-    <section id="hero">
+    <section id="hero" class="hero-sections">
       <img
         id="hero-img"
         src="/assets/img/hero-atelie.jpg"
@@ -34,100 +34,208 @@
     <nav class="menu">
       <ul class="menu-list">
         <li class="menu-item">
-          <a class="menu-link spacing" href="#inicio">Início</a>
+          <a class="menu-link spacing" href="#hero">Início</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#estudio">Estúdio</a>
+          <a class="menu-link spacing" href="#hero-objects">Estúdio</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#colecoes">Coleções</a>
+          <a class="menu-link spacing" href="#hero-table">Coleções</a>
         </li>
         <li class="menu-item">
-          <a id="menu-logo" class="menu-link" href="#sobre">A</a>
+          <a id="menu-logo" class="menu-link" href="#hero">A</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#galeria">Galeria</a>
+          <a class="menu-link spacing" href="#hero-catalog">Galeria</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#depoimentos">Depoimentos</a>
+          <a class="menu-link spacing" href="#">Depoimentos</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#contato">Contato</a>
+          <a class="menu-link spacing" href="#">Contato</a>
         </li>
       </ul>
     </nav>
 
-    <section id="hero-objects" class="light">
-      <h2 id="section-title" class="spacing">Fazemos objetos que duram mais que nos.</h2>
+    <section id="hero-objects" class="hero-sections light">
+      <h2 class="section-title" class="spacing">
+        Fazemos objetos que duram mais que nos.
+      </h2>
       <p>
-        Um estidio pequeno em uma rua sem saida: barro, madeira e vidro
-        trabalhados devagar, em edicdes cura. Cada peca sai numerade, assinada &
-        com o nome de quem a fez no verso.
+        Um estúdio pequeno em uma rua sem saída: barro, madeira e vidro
+        trabalhados devagar, em edicões curtas. Cada peça sai numerada, assinada
+        e com o nome de quem a fez no verso.
       </p>
 
       <div id="menu-objects">
         <div class="menu-item-objects">
-          <img
-            class="img-objects"
-            src="/assets/img/icone-materia.svg"
-            alt="Ícone de caixa"
-          />
+          <div class="underline">
+            <img
+              class="img-objects"
+              src="/assets/img/icone-materia.svg"
+              alt="Ícone de caixa"
+            />
+          </div>
           <span class="img-description">Matéria</span>
         </div>
         <div class="menu-item-objects">
-          <img
-            class="img-objects"
-            src="/assets/img/icone-desenho.svg"
-            alt="Ícone de lápis"
-          />
+          <div class="underline">
+            <img
+              class="img-objects"
+              src="/assets/img/icone-desenho.svg"
+              alt="Ícone de lápis"
+            />
+          </div>
           <span class="img-description">Desenho</span>
         </div>
         <div class="menu-item-objects">
-          <img
-            class="img-objects"
-            src="/assets/img/icone-forma.svg"
-            alt="Ícone de taça"
-          />
+          <div class="underline">
+            <img
+              class="img-objects"
+              src="/assets/img/icone-forma.svg"
+              alt="Ícone de taça"
+            />
+          </div>
           <span class="img-description">Fôrma</span>
         </div>
         <div class="menu-item-objects">
-          <img
-            class="img-objects"
-            src="/assets/img/icone-entrega.svg"
-            alt="Ícone de caixa"
-          />
+          <div class="underline">
+            <img
+              class="img-objects"
+              src="/assets/img/icone-entrega.svg"
+              alt="Ícone de caixa"
+            />
+          </div>
           <span class="img-description">Entrega</span>
         </div>
       </div>
     </section>
 
-    <section id="hero-table" class="dark">
-      <h2 id="section-title light">Quatro coleções, uma por estacão</h2>
-      <p>EDIÇÕES ABERTAS</p>
+    <section id="hero-table" class="hero-sections dark">
+      <h2 class="section-title">Quatro coleções, uma por estacão</h2>
+
       <table>
-        <tr>
-          <th>COLEÇÃO</th>
-          <th>PEÇA</th>
-          <th>EDIÇÃO</th>
-          <th>PRAZO</th>
-        </tr>
-        <tr>
-          <td>Névoa</td>
-          <td>Névoa</td>
-          <td>Sal</td>
-          <td>Sal</td>
-        </tr>
+        <caption>
+          EDIÇÕES ABERTAS
+        </caption>
+        <thead>
+          <tr>
+            <th>COLEÇÃO</th>
+            <th>PEÇA</th>
+            <th>EDIÇÃO</th>
+            <th>PRAZO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Névoa</td>
+            <td>Vaso Baixo</td>
+            <td>40 un.</td>
+            <td>3 semanas</td>
+          </tr>
+          <tr>
+            <td>Névoa</td>
+            <td>Prato Fundo</td>
+            <td>60 un.</td>
+            <td>3 semanas</td>
+          </tr>
+          <tr>
+            <td>Sal</td>
+            <td>Luminária de Mesa</td>
+            <td>25 un.</td>
+            <td>5 semanas</td>
+          </tr>
+          <tr>
+            <td>Sal</td>
+            <td>Espelho Oval</td>
+            <td>18 un.</td>
+            <td>6 semanas</td>
+          </tr>
+          <tr>
+            <td>Ferro</td>
+            <td>Banco de Canto</td>
+            <td>12 un.</td>
+            <td>8 semanas</td>
+          </tr>
+          <tr>
+            <td>Ferro</td>
+            <td>Cabideiro Alto</td>
+            <td>20 un.</td>
+            <td>7 semanas</td>
+          </tr>
+          <tr>
+            <td>Vento</td>
+            <td>Móbile de Vidro</td>
+            <td>30 un.</td>
+            <td>4 semanas</td>
+          </tr>
+        </tbody>
       </table>
+
       <p>
-        Abrimos as encomendas quatro vezes por ano e fechamos quando a edicéo
-        acaba. Nada é refeito depois: o molde é quebrado e a colecéo seguinte
-        comega do papel em branco.
+        Abrimos as encomendas quatro vezes por ano e fechamos quando a edição
+        acaba. Nada é refeito depois: o molde é quebrado e a coleção seguinte
+        começa do papel em branco.
+        <br><br>
+        Os prazos acima contam a partir da confirmação. O frete é combinado peça
+        a peça, porque nenhuma delas viaja igual.
       </p>
+      
+      <a href="" class="btn-section">Pedir o Catálogo</a>
+    </section>
+
+    <section id="middle-section" class="hero-sections">
       <p>
-        Os prazos acima contam a partir da confirmag&o. O frete 6 combinado pega
-        a peca, porque nenhuma delas viaja igual.
+        “Comprei uma peça pensando em decorar uma prateleira. Ela virou a coisa
+        que eu pego todos os dias, e é a única da casa que eu saberia descrever
+        de olhos fechados.”
       </p>
-      <button class="btn-section">Pedir o Catálogo</button>
+      <span>MARINA ÁLVARES, COLEÇÃO NÉVOA</span>
+    </section>
+
+    <section id="hero-catalog" class="hero-sections light">
+      <h2 class="section-title">Peças Recentes</h2>
+      <div id="catalog-itens">
+        <div class="products-catalog">
+          <img
+            class="img-catalog"
+            src="assets/img/peca-tigela.jpg"
+            alt="Imagem de Tigela"
+          />
+          <div class="under-img">
+            <span class="discription">Tigela Funda</span>
+            <span class="discription">Névoa · grês</span>
+          </div>
+        </div>
+        <div class="products-catalog">
+          <img
+            class="img-catalog"
+            src="assets/img/peca-assento.jpg"
+            alt="Imagem de Assentos"
+          />
+          <div class="under-img">
+            <span class="discription">Assento de três pés</span>
+            <span class="discription">Ferro · madeira</span>
+          </div>
+        </div>
+        <div class="products-catalog">
+          <img
+            class="img-catalog"
+            src="assets/img/peca-secagem.jpg"
+            alt="Imagem de secagem de tigelas"
+          />
+          <div class="under-img">
+            <span class="discription">Tigelas em secagem</span>
+            <span class="discription">Névoa · ateliê</span>
+          </div>
+        </div>
+      </div>
+      <h2 class="section-title">Peças o Catálogo</h2>
+      <p>
+        A edição de inverno abre em 14 de setembro. Deixe seu contato e enviamos
+        o catálogo impresso, com as medidas e os preços de cada peça.
+      </p>
+      <button class="btn-section">Enviar Pedido</button>
     </section>
   </body>
 </html>

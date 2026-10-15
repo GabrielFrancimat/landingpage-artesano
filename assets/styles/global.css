@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
-body, html{
-  height: 100%;
+html, body {
+  min-height: 100%;
+}
+
+.hero-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  font-weight: normal;
+  font-family: serif;
 }
