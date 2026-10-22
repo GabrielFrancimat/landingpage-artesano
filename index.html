@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/assets/styles/global.css" />
   </head>
   <body>
-    <section id="hero" class="hero-sections">
+    <section id="hero" class="hero-sections global-uppercase">
       <img
         id="hero-img"
         src="/assets/img/hero-atelie.jpg"
@@ -31,7 +31,7 @@
       </div>
     </section>
 
-    <nav class="menu">
+    <nav class="menu global-uppercase">
       <ul class="menu-list">
         <li class="menu-item">
           <a class="menu-link spacing" href="#hero">Início</a>
@@ -176,12 +176,12 @@
         Abrimos as encomendas quatro vezes por ano e fechamos quando a edição
         acaba. Nada é refeito depois: o molde é quebrado e a coleção seguinte
         começa do papel em branco.
-        <br><br>
+        <br /><br />
         Os prazos acima contam a partir da confirmação. O frete é combinado peça
         a peça, porque nenhuma delas viaja igual.
       </p>
-      
-      <a href="" class="btn-section">Pedir o Catálogo</a>
+
+      <a href="" class="btn-section global-uppercase">Pedir o Catálogo</a>
     </section>
 
     <section id="middle-section" class="hero-sections">
@@ -193,7 +193,7 @@
       <span>MARINA ÁLVARES, COLEÇÃO NÉVOA</span>
     </section>
 
-    <section id="hero-catalog" class="hero-sections light">
+    <section id="hero-img-catalog" class="hero-sections light">
       <h2 class="section-title">Peças Recentes</h2>
       <div id="catalog-itens">
         <div class="products-catalog">
@@ -202,7 +202,7 @@
             src="assets/img/peca-tigela.jpg"
             alt="Imagem de Tigela"
           />
-          <div class="under-img">
+          <div class="under-img global-uppercase">
             <span class="discription">Tigela Funda</span>
             <span class="discription">Névoa · grês</span>
           </div>
@@ -213,7 +213,7 @@
             src="assets/img/peca-assento.jpg"
             alt="Imagem de Assentos"
           />
-          <div class="under-img">
+          <div class="under-img global-uppercase">
             <span class="discription">Assento de três pés</span>
             <span class="discription">Ferro · madeira</span>
           </div>
@@ -224,18 +224,77 @@
             src="assets/img/peca-secagem.jpg"
             alt="Imagem de secagem de tigelas"
           />
-          <div class="under-img">
+          <div class="under-img global-uppercase">
             <span class="discription">Tigelas em secagem</span>
             <span class="discription">Névoa · ateliê</span>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="hero-catalog" class="hero-sections light">
       <h2 class="section-title">Peças o Catálogo</h2>
       <p>
         A edição de inverno abre em 14 de setembro. Deixe seu contato e enviamos
         o catálogo impresso, com as medidas e os preços de cada peça.
       </p>
-      <button class="btn-section">Enviar Pedido</button>
+
+      <form
+        action="https://webhook.site/03a982d8-317a-46a3-b5e0-c3453591740e"
+        method="get"
+      >
+        <div class="form-container">
+          <div class="forms-input">
+            <span class="input-title global-uppercase">Nome</span>
+            <input
+              type="text"
+              name="person-name"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+
+          <div class="forms-input">
+            <span class="input-title global-uppercase">E-mail</span>
+            <input
+              type="email"
+              name="person-email"
+              placeholder="voce@exemplo.com"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="forms-input">
+          <span class="input-title global-uppercase" for=""
+            >O que te interessa</span
+          >
+          <div class="forms-options">
+            <input type="radio" id="catalog" name="interest" value="catalog" />
+            <label for="catalog">Só o catálogo</label>
+            <input type="radio" id="piece" name="interest" value="piece" />
+            <label for="piece">Uma peça expecífica</label>
+            <input type="radio" id="package" name="interest" value="package" />
+            <label for="package">Encomenda sob medida</label>
+          </div>
+          <span class="input-title global-uppercase" for=""
+            >Recado(Opcional)</span
+          >
+          <textarea class="input-title global-uppercase" name="">
+            Uma frase basta</textarea
+          >
+        </div>
+        <button class="btn-form dark global-uppercase">Enviar Pedido</button>
+        <p class="input-title global-uppercase">
+          Escrevemos de volta em até dois dias úteis
+        </p>
+      </form>
     </section>
+
+    <footer class="footer dark">
+      <p>Artesano</p>
+      <p>Estúdio de objetos desde 2019</p>
+      <a href="#">Voltar ao topo</a>
+    </footer>
   </body>
 </html>

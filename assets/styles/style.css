@@ -1,6 +1,5 @@
 #hero {
   position: relative;
-  text-transform: uppercase;
   font-family: var(--font-primary);
   min-height: 100vh;
 }
@@ -40,6 +39,7 @@
 .hero-description {
   display: flex;
   align-items: center;
+  /* align-self: center; */
   justify-content: center;
   gap: 0 var(--spacing-lg);
   font-family: var(--font-secondary);
@@ -120,8 +120,7 @@
 
 /* Section do Menu(<nav>) */
 .menu {
-  padding: var(--spacing-lg);
-  text-transform: uppercase;
+  padding: var(--spacing-xl);
   font-family: var(--font-primary);
   position: sticky;
   top: 0;
@@ -164,7 +163,7 @@
 }
 
 .dark {
-  background-color: var(--color-background-black);
+  background-color: var(--color-background-graphite);
   color: var(--color-text-white);
 }
 
@@ -209,8 +208,8 @@
 }
 
 .img-objects {
-  height: 70px;
-  width: 70px;
+  height: var(--size-lg);
+  width: var(--size-lg);
   object-fit: cover;
 }
 
@@ -255,7 +254,6 @@ tr {
   border: 2px solid;
   padding: 15px;
   width: 200px;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   background-color: var(--color-background-black);
@@ -295,11 +293,19 @@ tr {
   display: block;
 }
 
+/* Section Img's Catalogo */
 /* Section Catalogo */
-#hero-catalog {
+#hero-catalog, #hero-img-catalog {
   font-family: var(--font-primary);
   min-width: 100%;
-  padding: 20px;
+  padding: 25px;
+  min-height: 80vh;
+}
+
+#hero-catalog p {
+  font-size: 20px;
+  text-align: center;
+  width: var(--size-2xl);
 }
 
 #catalog-itens {
@@ -325,7 +331,6 @@ tr {
 }
 
 .under-img span {
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 15px;
   display: block;
@@ -334,4 +339,63 @@ tr {
 .description {
   text-transform: uppercase;
   text-align: center;
+}
+
+/* Forms Catalogo */
+form input {
+  padding: 15px;
+}
+
+input::placeholder, .input-title {
+  color: var(--color-text-gray-1);
+  opacity: 0.4;
+}
+
+.form-container {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  width: 100%;
+}
+
+.forms-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  width: 100%;
+}
+
+.forms-options {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+}
+
+.btn-form {
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 25px;
+  padding: 15px;
+  width: var(--size-1\5xl);
+  margin-bottom: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: var(--spacing-2xl);
+}
+
+.footer a {
+  color: var(--color-text-white);
 }

@@ -60,10 +60,11 @@
     --size-xs: 0.5rem;
     --size-sm: 1.25rem;
     --size-md: 2rem;
-    --size-lg: 3rem;
+    --size-lg: 4rem;
     --size-xl: 9rem;
     
     /* Sizing (div's or sections's sizes) */
+    --size-1\5xl: 20rem;
     --size-2xl: 40rem;
     --size-4xl: 60rem;
     --size-6xl: 80rem;
