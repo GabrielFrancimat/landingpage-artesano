@@ -1,3 +1,4 @@
+/* Primeira Section Hero */
 #hero {
   position: relative;
   font-family: var(--font-primary);
@@ -119,6 +120,10 @@
 }
 
 /* Section do Menu(<nav>) */
+.menu-mobile {
+  display: none;
+}
+
 .menu {
   padding: var(--spacing-xl);
   font-family: var(--font-primary);
@@ -152,14 +157,17 @@
   padding: 17px 24px;
   border: 2px solid var(--color-background-black);
   border-radius: 1px;
-  color: var(--color-background-black);
-  font-size: var(--font-size-lg);
+}
+
+#menu-logo a {
+    color: var(--color-background-black);
 }
 
 #menu-logo:hover {
   color: var(--color-text-gray-1);
   border-color: var(--color-text-gray-1);
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .dark {
@@ -181,8 +189,9 @@
   color: var(--color-text-gray-1);
   font-size: var(--font-size-lg);
   text-align: center;
-  max-width: var(--size-2xl);
+  max-width: var(--size-4xl);
   line-height: 1.5;
+  opacity: 0.7;
 }
 
 .section-title::after {

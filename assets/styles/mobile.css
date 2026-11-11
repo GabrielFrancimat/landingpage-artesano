@@ -1,0 +1,43 @@
+/* Ajustes fluidos do menu entre o desktop e o ponto de troca para mobile. */
+.menu {
+  padding: clamp(1rem, -1.49rem + 3.24vw, var(--spacing-xl));
+}
+
+.menu-list {
+  gap: clamp(0.5rem, -2.83rem + 6.93vw, var(--spacing-xl));
+}
+
+.menu-link {
+  font-size: clamp(0.6875rem, 0.20rem + 1.05vw, var(--font-size-sm));
+}
+
+.menu-link.spacing {
+  letter-spacing: clamp(0.15rem, -0.43rem + 1.21vw, var(--spacing-md));
+}
+
+#menu-logo {
+  padding: clamp(0.5rem, -0.44rem + 1.95vw, 1.0625rem)
+    clamp(0.75rem, -0.5rem + 2.6vw, 1.5rem);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg);
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-item {
+    display: none;
+  }
+
+  .menu-item#menu-logo {
+    display: block;
+    padding: 0.5rem 0.75rem;
+  }
+}

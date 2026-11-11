@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/styles/variables.css" />
     <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="stylesheet" href="/assets/styles/global.css" />
+    <link rel="stylesheet" href="/assets/styles/mobile.css" />
   </head>
   <body>
     <section id="hero" class="hero-sections global-uppercase">
@@ -42,19 +43,20 @@
         <li class="menu-item">
           <a class="menu-link spacing" href="#hero-table">Coleções</a>
         </li>
-        <li class="menu-item">
-          <a id="menu-logo" class="menu-link" href="#hero">A</a>
+        <li class="menu-item" id="menu-logo">
+          <a class="menu-link" href="#hero">A</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#hero-catalog">Galeria</a>
+          <a class="menu-link spacing" href="#hero-img-catalog">Galeria</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#">Depoimentos</a>
+          <a class="menu-link spacing" href="#middle-section">Depoimentos</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link spacing" href="#">Contato</a>
+          <a class="menu-link spacing" href="#hero-footer">Contato</a>
         </li>
       </ul>
+      <span class="menu-mobile">Menu</span>
     </nav>
 
     <section id="hero-objects" class="hero-sections light">
@@ -280,9 +282,10 @@
           <span class="input-title global-uppercase" for=""
             >Recado(Opcional)</span
           >
-          <textarea class="input-title global-uppercase" name="">
-            Uma frase basta</textarea
-          >
+          <textarea
+            class="input-title global-uppercase"
+            placeholder="Uma frase basta..."
+          ></textarea>
         </div>
         <button class="btn-form dark global-uppercase">Enviar Pedido</button>
         <p class="input-title global-uppercase">
@@ -291,7 +294,7 @@
       </form>
     </section>
 
-    <footer class="footer dark">
+    <footer id="hero-footer" class="footer dark">
       <p>Artesano</p>
       <p>Estúdio de objetos desde 2019</p>
       <a href="#">Voltar ao topo</a>
